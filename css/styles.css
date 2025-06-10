@@ -18,7 +18,7 @@ header .logo {
 }
 header .logo img {
   display: flex;
-  width: 20rem;
+  width: 16rem;
   height: auto;
   align-items: center;
   padding: 0;
