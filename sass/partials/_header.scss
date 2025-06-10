@@ -23,8 +23,6 @@ padding: 0;
   nav {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    align-items: end;
     height: 7.7rem;
     color: variables.$blanco;
     background-color: variables.$brownie;
@@ -38,10 +36,8 @@ padding: 0;
       width: 100%;
       gap: 5rem;
 
-
     li {
       height: 100px;
-      align-content: center;
        }
 
 a {
