@@ -1,0 +1,21 @@
+@use "variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: variables.$cream;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1rem; /* Espacio entre columnas */
+  padding: 1rem;
+}
+
+.column {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
