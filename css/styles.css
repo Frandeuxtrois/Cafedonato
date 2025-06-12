@@ -49,7 +49,7 @@ header nav ul li {
 header nav ul a {
   position: relative;
   display: inline-block;
-  color: #F5E1A4;
+  color: #D9CBAE;
   text-decoration: none;
   transition: transform 0.3s;
 }
@@ -158,6 +158,71 @@ header .btn:hover::after {
   display: none;
 }
 
+footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #1C1C1C;
+}
+footer p {
+  display: flex;
+  color: #D9CBAE;
+  text-align: center;
+  font-size: small;
+  text-shadow: 0px 0px 19px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0px;
+}
+footer p a {
+  display: flex;
+  flex-direction: row;
+  width: 3.4%;
+  padding-top: 5px;
+}
+footer .grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1rem; /* Espacio entre columnas */
+  padding: 1rem;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin: 2px;
+  justify-content: end;
+}
+footer .redes img {
+  height: 7vh;
+}
+@keyframes redes-grow-shadow {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(215, 38, 56);
+  }
+}
+@keyframes redes-shrink-shadow {
+  0% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(215, 38, 56);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+footer .redes img:hover {
+  animation: grow-shadow 0.3s forwards ease-out;
+  border-radius: 90%;
+}
+footer .redes img:not(:hover) {
+  animation: shrink-shadow 0.3s forwards ease-out;
+  border-radius: 90%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -165,8 +230,9 @@ body {
   background-repeat: repeat;
   background-size: auto;
 }
-body h1 {
+body h1, body h2 {
   font-size: xx-large;
+  font-weight: bold;
   color: #D9CBAE;
   width: 24rem;
   margin: 15px auto;

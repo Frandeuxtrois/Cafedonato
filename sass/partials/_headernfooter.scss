@@ -48,7 +48,7 @@ padding: 0;
 a {
   position: relative;
   display: inline-block;
-  color: variables.$yellowcream;
+  color: variables.$cream;
   text-decoration: none;
   transition: transform 0.3s;
   }
@@ -167,4 +167,80 @@ a:hover {
 
 .quantity {
   display: none;
+}
+
+// Footer
+
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #1C1C1C;
+
+    p{
+        display: flex;
+        color: variables.$cream;
+        text-align: center;
+        font-size: small;
+        text-shadow: 0px 0px 19px rgba(0,0,0,0.6);
+        margin-bottom: 0px;
+
+
+        a{
+            display: flex;
+            flex-direction: row;
+            width: 3.4%;
+            padding-top: 5px;
+        }
+    }
+
+  .grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1rem; /* Espacio entre columnas */
+  padding: 1rem;
+}
+
+  .redes {
+    display: flex;  
+    flex-direction: row;
+    gap: 7px;
+    margin: 2px;
+    justify-content: end;
+
+    img {
+    height: 7vh;
+    @keyframes redes-grow-shadow {
+      0% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+      100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(215, 38, 56, 1);
+      }
+    }
+
+    @keyframes redes-shrink-shadow {
+      0% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(215, 38, 56, 1);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+    }
+
+    &:hover {
+      animation: grow-shadow 0.3s forwards ease-out;
+    border-radius: 90%;
+    }
+
+    &:not(:hover) {
+      animation: shrink-shadow 0.3s forwards ease-out;
+    border-radius: 90%;
+    }   
+    }
+}
 }
