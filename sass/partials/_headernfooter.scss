@@ -1,246 +1,216 @@
 @use "variables";
+
 header {
-margin: 0;
-padding: 0;
-
-
-.logo {
-  margin: 20px;
-  position: absolute;
-
-    img {
-    display: flex;
-    width: 16rem;
-    height: auto;
-    align-items: center;
-    padding:0;
-    margin: 0;
-    animation: shadow-drop-center 0.6s ease-in-out;
-    }
-}
-
-
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: variables.$primary;
+  box-shadow: variables.$shadow-md;
+  transition: variables.$transition-base;
 
   nav {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: end;
-    height: 7.7rem;
-    color: variables.$blanco;
-    background-color: variables.$brownie;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: variables.$spacing-md variables.$spacing-lg;
+    height: auto;
+    background-color: transparent;
 
+    .logo-container {
+      flex: 0 0 auto;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-self: center;
-      width: 100%;
-      gap: 5rem;
+      img {
+        width: 12rem;
+        height: auto;
+        transition: variables.$transition-base;
 
-
-    li {
-      height: 100px;
-      align-content: center;
-       }
-
-a {
-  position: relative;
-  display: inline-block;
-  color: variables.$cream;
-  text-decoration: none;
-  transition: transform 0.3s;
-  }
-
-a:hover {
-  transform: scale(1.02);
-}
- }
-}
-
- .headerbutton {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
- }
-
- .btn {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-
-  color: variables.$cream;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  position: relative;
-}
-
-.btn::after {
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  font-size: 15px;
-  color: white;
-  font-family: "Nunito Sans";
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s linear;
-  top: 115%;
-}
-
-.icon {
-  width: 20px;
-  height: 30px;
-  transition: 0.2s linear;
-}
-
-.icon path {
-  fill: rgb(217, 203, 174);
-  transition: 0.2s linear;
-}
-
-.btn:hover > .icon {
-  transform: scale(1.03);
-}
-
-.btn:hover > .icon path {
-  fill: rgb(177, 139, 189);
-}
-
-.btn:hover::after {
-  visibility: visible;
-  opacity: 1;
-  top: 105%;
-    }
-  }
-  .btn-cart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: auto;
-  margin: 5px;
-  border-radius: 10px;
-  border: none;
-  background-color: transparent;
-  position: relative;
-}
-
-.btn-cart::after {
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  font-size: 15px;
-  color: white;
-  font-family: 'Nunito Sans', 'sans-serif';
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s linear;
-  top: 115%;
-}
-
-.carrito {
-  transition: .2s linear;
-}
-
-.carrito path {
-  fill: rgb(217, 203, 174);
-  transition: .2s linear;
-}
-
-.btn-cart:hover > .carrito {
-  transform: scale(1.03);
-}
-
-.btn-cart:hover > .carrito path {
-  fill: rgb(177, 139, 189);
-}
-
-.btn-cart:hover::after {
-  visibility: visible;
-  opacity: 1;
-  top: 105%;
-}
-
-.quantity {
-  display: none;
-}
-
-// Footer
-
-footer {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    background-color: #1C1C1C;
-
-    p{
-        display: flex;
-        color: variables.$cream;
-        text-align: center;
-        font-size: small;
-        text-shadow: 0px 0px 19px rgba(0,0,0,0.6);
-        margin-bottom: 0px;
-
-
-        a{
-            display: flex;
-            flex-direction: row;
-            width: 3.4%;
-            padding-top: 5px;
+        &:hover {
+          transform: scale(1.05);
         }
+      }
     }
 
-  .grid-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 1rem; /* Espacio entre columnas */
-  padding: 1rem;
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: variables.$spacing-xl;
+      align-items: center;
+
+      li {
+        height: auto;
+      }
+
+      a {
+        color: variables.$accent;
+        text-decoration: none;
+        font-weight: variables.$font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: variables.$transition-base;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: variables.$accent;
+          transition: width .3s;
+        }
+
+        &:hover {
+          color: variables.$white;
+          transform: none;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: variables.$spacing-md;
+
+      .btn-icon {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: variables.$spacing-sm;
+        transition: variables.$transition-fast;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: variables.$accent;
+          transition: variables.$transition-fast;
+        }
+
+        &:hover svg {
+          fill: variables.$white;
+          transform: scale(1.1);
+        }
+      }
+
+      .btn-cart {
+        position: relative;
+
+        .quantity {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background-color: variables.$secondary;
+          color: variables.$white;
+          font-size: 0.7rem;
+          padding: 2px 6px;
+          border-radius: variables.$border-radius-round;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 18px;
+          height: 18px;
+          font-weight: variables.$font-weight-bold;
+        }
+      }
+    }
+  }
 }
 
-  .redes {
-    display: flex;  
-    flex-direction: row;
-    gap: 7px;
-    margin: 2px;
-    justify-content: end;
+// Mobile responsive (Simplified for now)
+@media (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
 
-    img {
-    height: 7vh;
-    @keyframes redes-grow-shadow {
-      0% {
-        transform: scale(1);
-        box-shadow: none;
-      }
-      100% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(215, 38, 56, 1);
-      }
+    .nav-links {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      padding-top: variables.$spacing-md;
+      gap: variables.$spacing-lg;
     }
-
-    @keyframes redes-shrink-shadow {
-      0% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(215, 38, 56, 1);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: none;
-      }
-    }
-
-    &:hover {
-      animation: grow-shadow 0.3s forwards ease-out;
-    border-radius: 90%;
-    }
-
-    &:not(:hover) {
-      animation: shrink-shadow 0.3s forwards ease-out;
-    border-radius: 90%;
-    }   
-    }
+  }
 }
+
+// Footer Modernization
+footer {
+  background-color: variables.$black;
+  padding: variables.$spacing-xl 0;
+  color: variables.$white;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 variables.$spacing-lg;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: variables.$spacing-xl;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-md;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: variables.$font-weight-bold;
+      color: variables.$accent;
+      margin-bottom: variables.$spacing-sm;
+    }
+
+    p {
+      color: variables.$bg-main;
+      text-align: left;
+      font-size: 0.9rem;
+      text-shadow: none;
+    }
+
+    .social-links {
+      display: flex;
+      gap: variables.$spacing-md;
+
+      a {
+        transition: variables.$transition-base;
+
+        img {
+          height: 40px;
+          width: 40px;
+          filter: grayscale(1) brightness(1.5);
+          transition: variables.$transition-base;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+
+          img {
+            filter: grayscale(0) brightness(1);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: variables.$spacing-xl;
+    padding-top: variables.$spacing-lg;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+
+    p {
+      width: 100%;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.8rem;
+    }
+  }
 }

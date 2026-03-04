@@ -1,6 +1,46 @@
-$yellowcream: #F5E1A4; // 	Detalles/acento: bordes, líneas, íconos, hover sutiles.
-$cream: #D9CBAE; //Crema 	Fondo principal de la página. Suave, no cansa la vista.
-$darkcream: #A68A6B; //Crema Oscuro Textos secundarios o fondos de bloques destacados.
-$brownie: #2C1A1A; //Marroncito 	Botones, títulos, navbar, zonas fuertes de contraste.
-$blanco: #FFFFFF; // blanco
-$font: 'Nunito Sans' 'sans serif';
+// Colors
+$primary: #2C1A1A;    // Brownie - Main accent, buttons, navbar
+$secondary: #A68A6B;  // Dark Cream - Secondary elements
+$accent: #F5E1A4;     // Yellow Cream - Highlights, hover states
+$bg-main: #D9CBAE;    // Cream - Background
+$bg-light: #F2E8D5;   // Lighter Cream - Section backgrounds
+$white: #FFFFFF;
+$black: #1A0F0F;
+
+// Typography
+$font-family-base: 'Nunito Sans', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 5rem;
+
+// Borders
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-round: 50%;
+
+// Transitions
+$transition-base: all 0.3s ease;
+$transition-fast: all 0.15s ease;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Legacy variables for compatibility during transition
+$yellowcream: $accent;
+$cream: $bg-main;
+$darkcream: $secondary;
+$brownie: $primary;
+$blanco: $white;
+$font: $font-family-base;
