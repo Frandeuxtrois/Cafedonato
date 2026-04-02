@@ -1,0 +1,32 @@
+// === PALETA DE COLORES ===
+$dark:         #1A0F0A; // Fondo oscuro (hero, productos, footer)
+$brown:        #2C1A1A; // Marrón para textos fuertes y botones
+$accent:       #B07D4A; // Acento ámbar/caramelo
+$accent-light: #D4A96A; // Versión clara del acento (hero, hover)
+$cream:        #F7F2EA; // Fondo crema principal
+$cream-mid:    #EDE4D4; // Crema media (sección beans)
+$cream-dark:   #C8B99A; // Crema oscura
+$text:         #2C1A1A; // Texto principal
+$text-muted:   #7A5C44; // Texto secundario apagado
+$white:        #FFFFFF;
+
+// === TIPOGRAFÍAS ===
+$font-serif: 'Cormorant Garamond', Georgia, serif;
+$font-sans:  'Nunito Sans', -apple-system, sans-serif;
+
+// === ESPACIADO ===
+$sp-xs:  0.5rem;
+$sp-sm:  1rem;
+$sp-md:  2rem;
+$sp-lg:  4rem;
+$sp-xl:  6rem;
+$sp-2xl: 10rem;
+
+// === LAYOUT ===
+$max-w: 1200px;
+$nav-h: 76px;
+
+// === TRANSICIONES ===
+$t-fast: 0.2s ease;
+$t-base: 0.35s ease;
+$t-slow: 0.65s ease;

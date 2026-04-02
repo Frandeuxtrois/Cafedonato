@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Encontrá los locales de Café Donato en Buenos Aires. Parque Patricios y Villa del Parque.">
+  <title>Nuestros Locales — Café Donato</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="scrolled">
+    <nav>
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo.png" alt="Café Donato">
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn cart-toggle" id="btn-cart" aria-label="Carrito">
+          <svg viewBox="0 0 24.38 30.52" height="20" width="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Z"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge" style="display:none">0</span>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="nosotros.html">Quienes Somos?</a>
+    <a href="locales.html">Locales</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero page-hero--short">
+      <div class="page-hero-bg" style="background-image: url('../images/local-parque-patricios.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <span class="hero-eyebrow">Buenos Aires</span>
+        <h1>Nuestros<br><em>Locales</em></h1>
+      </div>
+    </section>
+
+    <!-- ===================== INTRO ===================== -->
+    <div class="locales-intro">
+      <span class="section-label">Dos espacios, una sola pasión</span>
+      <p>Cada local de Café Donato es un espacio diseñado para que te sientas cómodo, ya sea que vengas a trabajar, a charlar o simplemente a disfrutar de un buen café.</p>
+    </div>
+
+    <!-- ===================== LOCAL 1 — PARQUE PATRICIOS ===================== -->
+    <article class="local-block">
+      <div class="local-img">
+        <img src="../images/local-parque-patricios.jpg" alt="Local Café Donato Parque Patricios">
+        <span class="local-tag">Local Principal</span>
+      </div>
+      <div class="local-info">
+        <span class="local-number">01</span>
+        <h2>Parque Patricios</h2>
+        <p class="local-desc">Nuestro primer local. El lugar donde todo comenzó en 2018. Tiene la barra de especialidad, el laboratorio de tostado y un salón amplio pensado para quedarse.</p>
+
+        <div class="local-details">
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Av. Caseros 3076, Parque Patricios</span>
+          </div>
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun – Vie: 8:00 – 20:00 &nbsp;·&nbsp; Sáb: 9:00 – 18:00</span>
+          </div>
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.59 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            <span>+54 11 4567-8901</span>
+          </div>
+        </div>
+
+        <div class="local-chips">
+          <span class="chip">Wi-Fi</span>
+          <span class="chip">Take Away</span>
+          <span class="chip">Tostado in situ</span>
+          <span class="chip">Talleres</span>
+          <span class="chip">Pet Friendly</span>
+        </div>
+
+        <div class="local-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.015!2d-58.4089!3d-34.6308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9e4f2b5e3d%3A0x0!2sAv.+Caseros+3076%2C+Parque+Patricios%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1"
+            width="100%" height="220" style="border:0; border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Local Parque Patricios">
+          </iframe>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== DIVISOR ===================== -->
+    <div class="locales-divider"><span></span></div>
+
+    <!-- ===================== LOCAL 2 — VILLA DEL PARQUE ===================== -->
+    <article class="local-block local-block--reverse">
+      <div class="local-img">
+        <img src="../images/local-villa-del-parque.jpg" alt="Local Café Donato Villa del Parque">
+        <span class="local-tag local-tag--new">Nuevo Local</span>
+      </div>
+      <div class="local-info">
+        <span class="local-number">02</span>
+        <h2>Villa del Parque</h2>
+        <p class="local-desc">Nuestro segundo hogar. Un espacio más íntimo y luminoso, ideal para las mañanas tranquilas. Con terraza exterior y menú de pastelería artesanal para acompañar el café.</p>
+
+        <div class="local-details">
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Baigorria 3247, Villa del Parque</span>
+          </div>
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun – Vie: 8:30 – 19:30 &nbsp;·&nbsp; Sáb: 9:00 – 17:00</span>
+          </div>
+          <div class="local-detail-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.59 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            <span>+54 11 4789-2233</span>
+          </div>
+        </div>
+
+        <div class="local-chips">
+          <span class="chip">Wi-Fi</span>
+          <span class="chip">Take Away</span>
+          <span class="chip">Terraza</span>
+          <span class="chip">Pastelería</span>
+          <span class="chip">Pet Friendly</span>
+        </div>
+
+        <div class="local-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2!2d-58.4902!3d-34.6094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b5b5b5b5b5%3A0x0!2sBaigorria+3247%2C+Villa+del+Parque%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1"
+            width="100%" height="220" style="border:0; border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Local Villa del Parque">
+          </iframe>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Café Donato">
+        <p>Café de especialidad en el corazón de Buenos Aires. Granos seleccionados, tueste artesanal, sabor auténtico.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+          <li><a href="locales.html">Locales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociales</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Café Donato. Todos los derechos reservados.</p>
+      <p>Hecho con amor en Buenos Aires</p>
+    </div>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="cart-drawer-header">
+      <h2>Tu Pedido</h2>
+      <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Renderizado dinámicamente -->
+    </div>
+    <div class="cart-empty" id="cart-empty" style="display:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24.38 30.52" fill="none" stroke="currentColor" stroke-width="1">
+        <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Z"/>
+      </svg>
+      <p>Tu carrito está vacío</p>
+    </div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <p class="cart-shipping-note">Envío calculado al finalizar la compra</p>
+      <button class="btn-checkout">Finalizar Compra</button>
+      <button class="btn-continue cart-close-trigger">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800, offset: 60 });
+
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < 10) header.classList.add('scrolled');
+    }, { passive: true });
+
+    // === MOBILE MENU ===
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    function openMobileMenu() {
+      hamburger.classList.add('open');
+      mobileMenu.classList.add('open');
+      if (mobileOverlay) mobileOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      if (mobileOverlay) mobileOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => mobileMenu.classList.contains('open') ? closeMobileMenu() : openMobileMenu());
+      if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
+    }
+
+    // === PRODUCTOS DESDE LOCALSTORAGE ===
+    const IMG_BASE = '../images/';
+    const DEFAULT_PRODUCTS = [
+      { id: 1, name: 'Café en Grano',    desc: '500 g · Tueste medio',  price: 15000, img: 'bolsa-med.jpg'  },
+      { id: 2, name: 'Café en Grano',    desc: '1 kg · Tueste medio',   price: 25000, img: 'bolsa-kg.jpg'   },
+      { id: 3, name: 'Taza Café Donato', desc: 'Con logo · Cerámica',   price: 16350, img: 'taza-logo.jpg'  }
+    ];
+    function getProducts() {
+      try { const s = localStorage.getItem('donato_products'); return s ? JSON.parse(s) : DEFAULT_PRODUCTS; }
+      catch { return DEFAULT_PRODUCTS; }
+    }
+    const products = getProducts();
+    const ITEMS = {};
+    products.forEach(p => { ITEMS[p.id] = { price: p.price, qty: 0 }; });
+    try { const saved = JSON.parse(sessionStorage.getItem('donato_cart') || '{}'); Object.keys(saved).forEach(id => { if (ITEMS[id] !== undefined) ITEMS[id].qty = Number(saved[id]); }); } catch {}
+
+    // === CART DRAWER ===
+    const drawer = document.getElementById('cart-drawer');
+    const overlay = document.getElementById('cart-overlay');
+    const badge = document.getElementById('cart-badge');
+    const totalEl = document.getElementById('cart-total');
+    const emptyEl = document.getElementById('cart-empty');
+    const footerEl = document.getElementById('cart-footer');
+
+    function formatPrice(n) { return '$' + n.toLocaleString('es-AR'); }
+
+    function renderCartItems() {
+      document.getElementById('cart-items').innerHTML = products.map(p => `
+        <div class="cart-item" id="cart-item-${p.id}" style="display:none">
+          <img src="${IMG_BASE}${p.img}" alt="${p.name}" class="cart-item-img">
+          <div class="cart-item-info">
+            <h3 class="cart-item-name">${p.name}</h3>
+            <span class="cart-item-desc">${p.desc}</span>
+            <span class="cart-item-price">${formatPrice(p.price)}</span>
+            <div class="cart-item-controls">
+              <button class="qty-btn" data-action="dec" data-id="${p.id}" aria-label="Restar">−</button>
+              <span class="qty-value" id="qty-${p.id}">0</span>
+              <button class="qty-btn" data-action="inc" data-id="${p.id}" aria-label="Sumar">+</button>
+            </div>
+          </div>
+        </div>`).join('');
+    }
+
+    function updateCart() {
+      let totalQty = 0, totalPrice = 0, anyVisible = false;
+      Object.entries(ITEMS).forEach(([id, item]) => {
+        const itemEl = document.getElementById('cart-item-' + id);
+        const qtyEl  = document.getElementById('qty-' + id);
+        if (item.qty <= 0) {
+          if (itemEl) itemEl.style.display = 'none';
+        } else {
+          if (itemEl) itemEl.style.display = 'flex';
+          if (qtyEl)  qtyEl.textContent = item.qty;
+          totalQty   += item.qty;
+          totalPrice += item.price * item.qty;
+          anyVisible  = true;
+        }
+      });
+      try { const c = {}; Object.entries(ITEMS).forEach(([id,i]) => { c[id] = i.qty; }); sessionStorage.setItem('donato_cart', JSON.stringify(c)); } catch {}
+      if (anyVisible) {
+        emptyEl.style.display = 'none'; footerEl.style.display = 'block';
+        badge.style.display = 'flex'; badge.textContent = totalQty;
+        totalEl.textContent = formatPrice(totalPrice);
+      } else {
+        emptyEl.style.display = 'flex'; footerEl.style.display = 'none';
+        badge.style.display = 'none';
+      }
+    }
+
+    function openCart() { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeCart() { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+    renderCartItems();
+    updateCart();
+
+    document.getElementById('btn-cart').addEventListener('click', openCart);
+    document.getElementById('cart-close').addEventListener('click', closeCart);
+    overlay.addEventListener('click', closeCart);
+    document.querySelectorAll('.cart-close-trigger').forEach(el => el.addEventListener('click', closeCart));
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.qty-btn');
+      if (!btn) return;
+      const id = btn.dataset.id;
+      if (!id || ITEMS[id] === undefined) return;
+      if (btn.dataset.action === 'inc') ITEMS[id].qty++;
+      if (btn.dataset.action === 'dec' && ITEMS[id].qty > 0) ITEMS[id].qty--;
+      updateCart();
+    });
+  </script>
+</body>
+</html>

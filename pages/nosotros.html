@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Conocé la historia de Café Donato, nuestros valores y el equipo detrás de cada taza.">
+  <title>Quiénes Somos — Café Donato</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="scrolled">
+    <nav>
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo.png" alt="Café Donato">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn cart-toggle" id="btn-cart" aria-label="Carrito">
+          <svg viewBox="0 0 24.38 30.52" height="20" width="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Z"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge" style="display:none">0</span>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="nosotros.html">Quienes Somos?</a>
+    <a href="locales.html">Locales</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <img src="../images/nosotros-hero.jpg" class="page-hero-img" alt="Interior Café Donato">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <span class="hero-eyebrow">Café Donato · Desde 2018</span>
+        <h1>Nuestra<br><em>Historia</em></h1>
+      </div>
+    </section>
+
+    <!-- ===================== INTRO NARRATIVO ===================== -->
+    <section class="text-section">
+      <div class="text-section-inner">
+        <span class="section-label">¿Quiénes Somos?</span>
+        <p class="lead-quote">"Empezamos tostando granos en una cocina pequeña. Hoy seguimos con la misma obsesión por el detalle."</p>
+        <p>Café Donato nació del sueño de dos hermanos que compartían una pasión desmedida por el café de especialidad. Lo que comenzó como un proyecto artesanal en el barrio de Parque Patricios se convirtió en un espacio de referencia para quienes buscan algo más que una simple taza.</p>
+        <p>Creemos que detrás de cada café existe una cadena de personas que merecen ser reconocidas: el productor que cuida la tierra, el recolector que elige el momento justo de la cosecha, y el barista que transforma ese trabajo en una experiencia sensorial única.</p>
+      </div>
+    </section>
+
+    <!-- ===================== HISTORIA — 2018 ===================== -->
+    <div class="historia-block">
+      <div class="historia-img">
+        <img src="../nova/cafevaso.png" alt="El primer local de Café Donato">
+      </div>
+      <div class="historia-text">
+        <span class="historia-year">2018</span>
+        <span class="section-label">El Comienzo</span>
+        <h3>Un sueño en<br>Parque Patricios</h3>
+        <p>Todo empezó con un tostador de segunda mano, dos hermanos y una pregunta: ¿por qué el café que tomamos todos los días puede ser tan mucho mejor? Tomás y Lucía Donato dejaron sus trabajos, alquilaron un pequeño espacio y comenzaron a tostar de forma artesanal.</p>
+        <p>Los primeros clientes eran amigos y vecinos. El boca a boca hizo el resto. En menos de un año, la demanda superó ampliamente la capacidad del local original.</p>
+      </div>
+    </div>
+
+    <!-- ===================== HISTORIA — 2021 ===================== -->
+    <div class="historia-block historia-block--reverse">
+      <div class="historia-img">
+        <img src="../nova/coffee-grain-food-nutrition.jpg" alt="Café de especialidad Donato">
+      </div>
+      <div class="historia-text">
+        <span class="historia-year">2021</span>
+        <span class="section-label">La Expansión</span>
+        <h3>Abrir las puertas<br>al mundo</h3>
+        <p>Con el local renovado y un equipo de baristas formados en las mejores escuelas del país, lanzamos nuestra barra al público. La propuesta era clara: café de especialidad accesible, sin pretensiones, pero con una calidad que habla por sí sola.</p>
+        <p>Incorporamos granos de origen único de Colombia, Etiopía y Perú. Cada bolsa lleva el nombre de la finca, la altitud de cultivo y las notas de cata. Transparencia total, de la planta a la taza.</p>
+      </div>
+    </div>
+
+    <!-- ===================== HISTORIA — 2024 ===================== -->
+    <div class="historia-block">
+      <div class="historia-img">
+        <img src="../images/carousel3.png" alt="Granos de café de especialidad">
+      </div>
+      <div class="historia-text">
+        <span class="historia-year">2024</span>
+        <span class="section-label">El Presente</span>
+        <h3>Café de especialidad<br>a tu puerta</h3>
+        <p>Hoy Café Donato llega a toda Argentina con su línea de granos y blends para preparar en casa. Desarrollamos guías de preparación, kits de iniciación y canales directos con los productores para garantizar frescura y trazabilidad en cada envío.</p>
+        <p>Seguimos siendo el mismo proyecto de barrio que empezó en 2018. Solo que ahora llegamos mucho más lejos.</p>
+      </div>
+    </div>
+
+    <!-- ===================== VALORES ===================== -->
+    <section class="values">
+      <div class="values-header" data-aos="fade-up">
+        <span class="section-label section-label--light">Lo que nos mueve</span>
+        <h2>Nuestros Valores</h2>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-number">01</span>
+          <h3>Origen Responsable</h3>
+          <p>Trabajamos directamente con productores certificados que practican agricultura sostenible. Pagamos precios justos, muy por encima del mercado de commodities.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-number">02</span>
+          <h3>Tueste Artesanal</h3>
+          <p>Cada lote se tuesta en pequeñas cantidades para garantizar frescura y precisión. Nuestros perfiles de tueste se ajustan al carácter único de cada origen.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-number">03</span>
+          <h3>Educación y Comunidad</h3>
+          <p>Organizamos talleres de cata, cursos de preparación y visitas a nuestro laboratorio de tostado. Creemos que entender el café hace mejor cada taza.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-number">04</span>
+          <h3>Consistencia Total</h3>
+          <p>Desde el primer lunes del año hasta el último viernes, el nivel de calidad no varía. Cada taza que sale de nuestra barra representa lo mejor que podemos hacer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPO ===================== -->
+    <section class="team">
+      <div class="team-image">
+        <img src="../images/nosotros-equipo.jpg" alt="Equipo Café Donato">
+      </div>
+      <div class="team-text">
+        <span class="section-label">Las personas detrás del café</span>
+        <h2>El Equipo</h2>
+
+        <div class="team-member">
+          <h3 class="team-member-name">Tomás Donato</h3>
+          <span class="team-member-role">Co-fundador · Head Roaster</span>
+          <p>Con más de 10 años de experiencia en cafés de especialidad, Tomás se encarga del desarrollo de perfiles de tueste y la selección de granos. Viaja dos veces al año a origen para conocer de primera mano a los productores.</p>
+        </div>
+
+        <div class="team-member">
+          <h3 class="team-member-name">Lucía Donato</h3>
+          <span class="team-member-role">Co-fundadora · Directora de Experiencia</span>
+          <p>Formada en diseño y gastronomía, Lucía dirige todo lo que sucede en el local: la atención, los talleres y la identidad visual del proyecto. Su obsesión es que cada cliente sienta que está en su propio living.</p>
+        </div>
+
+        <div class="team-member">
+          <h3 class="team-member-name">Martín Reyes</h3>
+          <span class="team-member-role">Head Barista · Campeón Nacional 2023</span>
+          <p>Ganador del Campeonato Nacional de Barismo 2023, Martín es el alma de nuestra barra. Cada preparación en sus manos es un acto de precisión y cariño.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== REDES SOCIALES ===================== -->
+    <section class="social-section">
+      <div class="social-section-text">
+        <span class="section-label section-label--light">Seguinos</span>
+        <h2>Estamos en<br><em>Redes</em></h2>
+        <p>Compartimos el día a día del café, recetas, detrás de escena y mucho más. Unite a nuestra comunidad.</p>
+      </div>
+      <div class="social-links-big">
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link-big">
+          <div class="social-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </div>
+          <span class="social-name">Facebook</span>
+          <span class="social-handle">@cafedonato</span>
+        </a>
+
+        <div class="social-divider"></div>
+
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-big">
+          <div class="social-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </div>
+          <span class="social-name">Instagram</span>
+          <span class="social-handle">@cafedonato</span>
+        </a>
+
+        <div class="social-divider"></div>
+
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link-big">
+          <div class="social-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+          </div>
+          <span class="social-name">TikTok</span>
+          <span class="social-handle">@cafedonato</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Café Donato">
+        <p>Café de especialidad en el corazón de Parque Patricios. Granos seleccionados, tueste artesanal, sabor auténtico.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+          <li><a href="locales.html">Locales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes Sociales</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Café Donato. Todos los derechos reservados.</p>
+      <p>Hecho con amor en Buenos Aires</p>
+    </div>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="cart-drawer-header">
+      <h2>Tu Pedido</h2>
+      <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Renderizado dinámicamente -->
+    </div>
+
+    <div class="cart-empty" id="cart-empty" style="display:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24.38 30.52" fill="none" stroke="currentColor" stroke-width="1">
+        <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Z"/>
+      </svg>
+      <p>Tu carrito está vacío</p>
+    </div>
+
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <p class="cart-shipping-note">Envío calculado al finalizar la compra</p>
+      <button class="btn-checkout">Finalizar Compra</button>
+      <button class="btn-continue cart-close-trigger">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800, offset: 60 });
+
+    // === PRODUCTOS DESDE LOCALSTORAGE ===
+    const IMG_BASE = '../images/';
+    const DEFAULT_PRODUCTS = [
+      { id: 1, name: 'Café en Grano',    desc: '500 g · Tueste medio',  price: 15000, img: 'bolsa-med.jpg'  },
+      { id: 2, name: 'Café en Grano',    desc: '1 kg · Tueste medio',   price: 25000, img: 'bolsa-kg.jpg'   },
+      { id: 3, name: 'Taza Café Donato', desc: 'Con logo · Cerámica',   price: 16350, img: 'taza-logo.jpg'  }
+    ];
+    function getProducts() {
+      try { const s = localStorage.getItem('donato_products'); return s ? JSON.parse(s) : DEFAULT_PRODUCTS; }
+      catch { return DEFAULT_PRODUCTS; }
+    }
+    const products = getProducts();
+    const ITEMS = {};
+    products.forEach(p => { ITEMS[p.id] = { price: p.price, qty: 0 }; });
+    try { const saved = JSON.parse(sessionStorage.getItem('donato_cart') || '{}'); Object.keys(saved).forEach(id => { if (ITEMS[id] !== undefined) ITEMS[id].qty = Number(saved[id]); }); } catch {}
+
+    // === CART DRAWER ===
+    const drawer   = document.getElementById('cart-drawer');
+    const overlay  = document.getElementById('cart-overlay');
+    const badge    = document.getElementById('cart-badge');
+    const totalEl  = document.getElementById('cart-total');
+    const emptyEl  = document.getElementById('cart-empty');
+    const footerEl = document.getElementById('cart-footer');
+
+    function formatPrice(n) { return '$' + n.toLocaleString('es-AR'); }
+
+    function renderCartItems() {
+      document.getElementById('cart-items').innerHTML = products.map(p => `
+        <div class="cart-item" id="cart-item-${p.id}" style="display:none">
+          <img src="${IMG_BASE}${p.img}" alt="${p.name}" class="cart-item-img">
+          <div class="cart-item-info">
+            <h3 class="cart-item-name">${p.name}</h3>
+            <span class="cart-item-desc">${p.desc}</span>
+            <span class="cart-item-price">${formatPrice(p.price)}</span>
+            <div class="cart-item-controls">
+              <button class="qty-btn" data-action="dec" data-id="${p.id}" aria-label="Restar">−</button>
+              <span class="qty-value" id="qty-${p.id}">0</span>
+              <button class="qty-btn" data-action="inc" data-id="${p.id}" aria-label="Sumar">+</button>
+            </div>
+          </div>
+        </div>`).join('');
+    }
+
+    function updateCart() {
+      let totalQty = 0, totalPrice = 0, anyVisible = false;
+      Object.entries(ITEMS).forEach(([id, item]) => {
+        const itemEl = document.getElementById('cart-item-' + id);
+        const qtyEl  = document.getElementById('qty-' + id);
+        if (item.qty <= 0) {
+          if (itemEl) itemEl.style.display = 'none';
+        } else {
+          if (itemEl) itemEl.style.display = 'flex';
+          if (qtyEl)  qtyEl.textContent = item.qty;
+          totalQty   += item.qty;
+          totalPrice += item.price * item.qty;
+          anyVisible  = true;
+        }
+      });
+      try { const c = {}; Object.entries(ITEMS).forEach(([id,i]) => { c[id] = i.qty; }); sessionStorage.setItem('donato_cart', JSON.stringify(c)); } catch {}
+      if (anyVisible) {
+        emptyEl.style.display = 'none'; footerEl.style.display = 'block';
+        badge.style.display = 'flex'; badge.textContent = totalQty;
+        totalEl.textContent = formatPrice(totalPrice);
+      } else {
+        emptyEl.style.display = 'flex'; footerEl.style.display = 'none';
+        badge.style.display = 'none';
+      }
+    }
+
+    function openCart()  { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeCart() { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+    renderCartItems();
+    updateCart();
+
+    document.getElementById('btn-cart').addEventListener('click', openCart);
+    document.getElementById('cart-close').addEventListener('click', closeCart);
+    overlay.addEventListener('click', closeCart);
+    document.querySelectorAll('.cart-close-trigger').forEach(el => el.addEventListener('click', closeCart));
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.qty-btn');
+      if (!btn) return;
+      const id = btn.dataset.id;
+      if (!id || ITEMS[id] === undefined) return;
+      if (btn.dataset.action === 'inc') ITEMS[id].qty++;
+      if (btn.dataset.action === 'dec' && ITEMS[id].qty > 0) ITEMS[id].qty--;
+      updateCart();
+    });
+
+
+    // === MOBILE MENU ===
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    function openMobileMenu() {
+      hamburger.classList.add('open');
+      mobileMenu.classList.add('open');
+      if (mobileOverlay) mobileOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      if (mobileOverlay) mobileOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => mobileMenu.classList.contains('open') ? closeMobileMenu() : openMobileMenu());
+      if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
+    }
+
+    // En páginas internas el header arranca sólido
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      // Siempre sólido en páginas internas (no hay hero full-screen)
+      if (window.scrollY < 10) header.classList.add('scrolled');
+    }, { passive: true });
+  </script>
+</body>
+</html>
